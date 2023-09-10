@@ -1,0 +1,21 @@
+<div class="container" id="blog-cards">
+  <div class="row row-cols-1 g-4">
+    {{#each blogDataList}}
+        <div class='col'>
+            <div class='card'>
+                <div class='card-body text-left'>
+                    <h5 id="card-title" class='card-title clickable' data-id={{id}}>
+                        {{title}}
+                        <small data-id={{id}}>
+                            <span data-id={{id}}>Posted by {{userName}} on {{createdAt}}</span>
+                        </small>
+                    </h5>
+                    <p class='card-text'>{{content}}</p>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+  </div>
+</div>
+
+<script src="/js/home.js"></script>

@@ -1,0 +1,52 @@
+<div class='container'>
+  <div class='row'>
+    <div class='col'>
+      <div class='card'>
+          <div class='card-body text-left'>
+              <h5 class='card-title'>
+                  {{blogData.title}}
+                  <small>
+                      <span>Posted by {{blogData.userName}} on {{blogData.createdAt}}</span>
+                  </small>
+              </h5>
+              <p class='card-text'>{{blogData.content}}</p>
+          </div>
+      </div>
+      <div class='comments-container'>
+        {{#each commentList}}
+          <div class='card'>
+            <div class='card-body text-left'>
+              <h5 class='card-title comment-title'></h5>
+              <p class="card-text">{{comment}}</p>
+              <p class="card-text">-{{userName}}, {{createdAt}}</p>
+              <strong></strong>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+  <div class='comment-container mt-4 comment-form'>
+  {{#if isLoggedin}}
+    <div class='card'>
+      <div class='card-body text-left'>
+        <h5 class='card-title comment-title'></h5>
+        <form id='comment-form' class="login-form" method='POST'>
+          <div class='form-group'>
+            <label for='comment'>Comment:</label>
+            <textarea
+              class='form-control'
+              id='comment-textarea'
+              rows='3'
+            ></textarea>
+          </div>
+          <button type='submit' class='btn button submit-btn'>Submit</button>
+        </form>
+      </div>
+    </div>
+    {{else}}
+      <p>You must be logged in to add a comment.</p>
+    {{/if}}
+  </div>
+</div>
+<script src='/js/add-comment.js'></script>
