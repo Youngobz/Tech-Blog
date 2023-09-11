@@ -2,6 +2,10 @@
 
 The Tech Blog is a platform where users can share and discuss the latest in technology. From deep dives into deep learning to explorations of the latest web development trends, The Tech Blog is the place for tech enthusiasts to connect and learn.
 
+
+https://github.com/Youngobz/Tech-Blog/assets/133522178/b5c8d7b4-80eb-42a3-a853-ed6cb47702e4
+
+
 ## Live Demo
 
 [The Tech Blog on Heroku](https://tech-blog-bc-70d3f8824fea.herokuapp.com/)
