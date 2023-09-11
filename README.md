@@ -50,4 +50,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Contact
 
-For any queries, feel free to contact me on moerahman1234@gmail.com
+For any queries, feel free to contact me at moerahman1234@gmail.com
